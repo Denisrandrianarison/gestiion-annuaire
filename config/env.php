@@ -18,20 +18,20 @@ class env
     private $dbName;
 
     /*
-    * Env server test
-    */
-    const HOST = "localhost";
-    const DATABASE = "dbtestdevphpdeniss192709com";
-    const USERNAME = "testdes192709com";
-    const PASSWORD = "A68xq5";
+     * Env server test
+     */
+    //const HOST = "localhost";
+    //const DATABASE = "dbtestdevphpdeniss192709com";
+    //const USERNAME = "testdes192709com";
+    //const PASSWORD = "A68xq5";
 
     /*
-    * Env local
-    */
-    // const HOST = "localhost";
-    // const DATABASE = "annuaire";
-    // const USERNAME = "root";
-    // const PASSWORD = "root";
+     * Env local
+     */
+    const HOST = 'localhost';
+    const DATABASE = 'annuaire';
+    const USERNAME = 'root';
+    const PASSWORD = '';
 
     function __construct()
     {
