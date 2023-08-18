@@ -1,0 +1,90 @@
+.snackbar-toast-warning{
+  min-width: 250px;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  text-align: center;
+  border-radius: 10px 10px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  top: 72px;
+  right: 24px;
+  font-size: 14px;
+  -webkit-animation: cssAnimation 7s forwards;
+  animation: cssAnimation 7s forwards;
+}
+
+.snackbar-toast-success {
+  min-width: 250px;
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  text-align: center;
+  border-radius: 10px 10px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  top: 72px;
+  right: 24px;
+  font-size: 14px;
+  -webkit-animation: cssAnimation 7s forwards;
+  animation: cssAnimation 7s forwards;
+}
+
+.spinner{
+  position: absolute;
+  padding: 2px 10px;
+  border-radius: 5px 5px 5px 5px;
+  margin-left: 40%;
+  margin-top: 0px;
+  /* margin-top: 49px; */
+  background-color: #6c757d;
+  color: white;
+}
+
+.snackbar_toast_modal {
+  min-width: 250px;
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  text-align: center;
+  border-radius: 10px 10px;
+  padding: 16px;
+  position: fixed;
+  top: 5px;
+  right: 120px;
+  font-size: 14px;
+  -webkit-animation: cssAnimation 7s forwards;
+  animation: cssAnimation 7s forwards;
+}
+
+.ag-color-7 {
+  color: white !important;
+  background-color: #56717a;
+  opacity: 0.9;
+}
+
+.ag-color-8 {
+  color: #6c85ec;
+  border-color: #6c85ec;
+}
+
+.ag-color-8:hover {
+  background: #6c85ec;
+  color: white;
+  opacity: 0.9;
+}
+
+
+@keyframes cssAnimation {
+  0% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@-webkit-keyframes cssAnimation {
+  0% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}

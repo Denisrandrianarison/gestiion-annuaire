@@ -1,0 +1,4 @@
+Options +MultiViews
+
+RewriteEngine On
+RewriteRule ^api/([/0-9a-zA-Z_-]*)$ "api/index.php"

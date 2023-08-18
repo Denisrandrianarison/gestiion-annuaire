@@ -1,0 +1,23 @@
+<div class="modal fade" style="margin-top:15% !important;" id="confirmDeleteCategory" tabindex="-1" aria-labelledby="confirm" aria-hidden="true">
+    <div class="modal-dialog modal-md rounded-0">
+        <div class="modal-content rounded-0">
+            <div class="modal-header" style="background-color: #f44336;color:white;opacity: 0.9;">
+                <h5 class="modal-title " style="margin-left: auto;color:white">Confirmation !</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body">
+                <div class="inline"></div>
+                    <div class="inlineBlock">
+                        <div class="line">Voulez vous vraiment suprimer la categorie</div>
+                        <div class="line" id="client-name-to-delete" style="font-weight: bold">{{lib}}</div><span class="fs-15"> ?</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer footer-bg">
+                <button type="button" class="btn btn-sm text-nowrap hover-btn ag-color-2" data-bs-dismiss="modal">Annuler</button>
+                <button type="text" class="btn btn-sm text-nowrap hover-btn btn-red" data-bs-dismiss="modal" ng-click="deleteCategory()" >Suprimer</button>
+            </div>
+        </div>
+    </div>
+</div>

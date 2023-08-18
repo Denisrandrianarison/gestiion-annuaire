@@ -1,0 +1,51 @@
+<div class="modal fade" style="margin-top:32px !important;" id="newClient" tabindex="-1" aria-labelledby="AddClient" aria-hidden="true">
+    <div class="modal-dialog modal-md rounded-0">
+        <div class="modal-content rounded-0">
+            <div class="modal-header rounded-0 ag-color-2">
+                <h5 class="modal-title " style="margin-left: auto;color:white">Nouvelle fiche</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                    <div class="row">
+                        <div class="row g-3 align-items-center mb-20">
+                            <div class="col-4">
+                                <label for="icpe" class="col-form-label">Libelle</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" id="nom" name="nom" class="form-control rounded-0" ng-model="fiche.libelle">
+                            </div>
+                        </div>
+
+                        <div class="row g-3 align-items-center mb-20">
+                            <div class="col-4">
+                                <label for="prenom" class="col-form-label">Description</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" id="prenom" name="prenom" class="form-control rounded-0" ng-model="fiche.description">
+                            </div>
+                        </div>
+
+                        <div class="row g-3 align-items-center mb-20">
+                            <div class="col-4">
+                                <label for="typologie" class="col-form-label">Categories</label>
+                            </div>
+                            <div class="col-8">
+                                <select class="form-control form-select rounded-0" ng-model="fiche.category">
+                                    <option value="">Veuillez choisir la categories</option>
+                                    <option ng-repeat="cat in allCategory" ng-value="cat.id" >{{cat.libelle}}</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+            </div>
+            <div class="modal-footer footer-bg">
+                <button type="button" class="btn btn-sm text-nowrap hover-btn ag-color-2" data-bs-dismiss="modal">Annuler</button>
+                <button type="submit" name="addClient" class="btn btn-sm text-nowrap hover-btn ag-color-6" data-bs-dismiss="modal" ng-click="addFiche(fiche)">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
